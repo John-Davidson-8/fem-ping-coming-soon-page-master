@@ -2,10 +2,62 @@
 :root {
   /* font */
   --bodyFont: "Libre Franklin", sans-serif;
+  /* primary colors */
+  --clr-primary-1-blue: hsl(223, 87%, 63%);
+  --clr-primary-2-paleBlue: hsl(223, 100%, 88%);
+  --clr-primary-3-lightRed: hsl(354, 100%, 66%);
+
+  /* secondary colors */
+  --clr-secondary-1-gray: hsl(0, 0%, 59%);
+  --clr-secondary-2-veryDarkBlue: hsl(209, 33%, 12%);
+
+  /* box shadow */
+  --shadow-1: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-2: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-3: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-4: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 body {
   font-family: var(--bodyFont);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--bodyFont);
+  font-size: 1.25rem;
+}
+.container {
+  border: 1px red solid;
+  padding: 5rem 2.25rem;
+  max-width: 25rem;
+  background: var(--clr-secondary-3-white);
+}
+h1 {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.blue-stop {
+  color: var(--clr-primary-1-blue);
+}
+h2 {
+  color: var(--clr-secondary-1-gray);
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.make-bold {
+  font-weight: 700;
+  color: black;
+}
+header p {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-bottom: 2rem;
 }
 
 /* credits */
