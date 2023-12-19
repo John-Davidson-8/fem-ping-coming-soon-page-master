@@ -86,6 +86,16 @@ h1 span {
   border-radius: 2rem;
   margin-bottom: 4.5rem;
 }
+/* access utilities */
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 .dashboard-image {
   margin-bottom: 8.25rem;
 }
