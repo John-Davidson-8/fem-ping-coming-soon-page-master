@@ -22,7 +22,7 @@
 
 body {
   font-family: var(--bodyFont);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,7 +66,7 @@ h1 span {
   max-width: 17.5rem;
   margin: auto;
 }
-#mail {
+#email {
   font-size: 0.75rem;
   padding-left: 2rem;
   padding-top: 0.65rem;
@@ -122,8 +122,20 @@ ul {
   color: var(--clr-secondary-1-gray);
   text-align: center;
 }
+
+/* Input controls */
+.input-control input:focus {
+  outline: 0;
+}
+.input-control.success input {
+  border-color: #09c372;
+}
+.input-control.error input {
+  border-color: #ff3860;
+}
+
 /* media queries */
-@media (min-width: 50rem) {
+@media (min-width: 40rem) {
   .container {
     max-width: 70rem;
     margin-top: 20rem;
@@ -141,40 +153,24 @@ ul {
   .contact-form {
     display: flex;
     flex-direction: row;
-    max-width: 40rem;
   }
-  #mail {
-    max-width: 26.5rem;
-    max-height: 3.5rem;
-    font-size: 1rem;
-    padding-top: 1.1rem;
-    padding-bottom: 1.1rem;
-    padding-left: 1.9rem;
-    padding-right: 10rem;
-  }
-  .btn-submit {
-    max-width: 12.5rem;
-    max-height: 3.5rem;
-    font-size: 1rem;
-    padding: 1.12rem 3.87rem 1.125rem 3.875rem;
-  }
-  .btn-submit:hover {
-    cursor: pointer;
-  }
-  .dashboard-image {
-    max-width: 40rem;
-  }
-  .footer-icon {
-    font-size: 1rem;
-    padding: 0.6rem;
-  }
-  .footer-icon:hover {
-    background: var(--clr-primary-1-blue);
-    color: var(--clr-secondary-4-white);
-  }
-  .copyright {
-    font-size: 0.75rem;
-  }
+}
+.btn-submit:hover {
+  cursor: pointer;
+}
+.dashboard-image {
+  max-width: 40rem;
+}
+.footer-icon {
+  font-size: 1rem;
+  padding: 0.6rem;
+}
+.footer-icon:hover {
+  background: var(--clr-primary-1-blue);
+  color: var(--clr-secondary-4-white);
+}
+.copyright {
+  font-size: 0.75rem;
 }
 
 /* credits */
