@@ -66,7 +66,7 @@ h1 span {
   max-width: 17.5rem;
   margin: auto;
 }
-#email {
+#mail {
   font-size: 0.75rem;
   padding-left: 2rem;
   padding-top: 0.65rem;
@@ -154,7 +154,7 @@ ul {
     flex-direction: row;
     max-width: 39rem;
   }
-  #email {
+  #mail {
     font-size: 1rem;
     font-weight: 300;
     padding: 1.1rem 15rem 1.1rem 1.9rem;
@@ -162,7 +162,7 @@ ul {
     max-width: 26.3rem;
   }
   .btn-submit {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     padding: 1rem 3rem 1rem 3rem;
     max-width: 12.5rem;
